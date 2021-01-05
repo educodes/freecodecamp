@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(35deg, #530ac2, #0a5ac2);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+header,
+footer {
+  background-color: rgb(15, 15, 15);
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 0.9rem;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header p {
+  font-size: 1.3em;
+}
+
+#title {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 38px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+#description {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+#survey-form {
+  padding: 25px;
+  margin: auto;
+  display: grid;
+  gap: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.label-title {
+  font-weight: 400;
+}
+
+.input-form {
+  width: 100%;
+  padding: 20px;
+  padding-left: 0;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  outline-style: none;
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  font-weight: 500;
+  color: white;
+}
+
+.input-form:focus {
+  border-bottom: 1px solid #06ffff;
+}
+
+.input-form::placeholder {
+  color: rgb(226, 218, 218);
+}
+
+#dropdown {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+  background-color: transparent;
+}
+
+#dropdown option {
+  color: black;
+}
+
+.input-form2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.input-form2 label {
+  font-weight: 300;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid rgb(189, 189, 189);
+  font-size: 1rem;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.btn {
+  border: none;
+  background-color: #ff7300;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.56);
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
+
+.social {
+  font-size: 1.7rem;
+}
+
+@media (min-width: 768px) {
+  #title {
+    font-size: 3rem;
+  }
+
+  #survey-form {
+    background-color: #ffffff;
+    width: 65%;
+    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.56);
+    color: black;
+    padding: 50px;
+    font-size: 18px;
+  }
+
+  .input-form {
+    border-bottom: 1px solid rgb(231, 231, 231);
+    color: black;
+  }
+
+  #dropdown {
+    color: black;
+    border: 1px solid gray;
+    font-size: 1rem;
+  }
+}

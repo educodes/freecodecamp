@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Landing page</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <figure>
+        <img
+          id="header-img"
+          class="header-img"
+          src="https://i.imgur.com/LLoxdSi.png"
+          alt="logo-empresa"
+        />
+      </figure>
+      <nav id="nav-bar">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#courses" class="nav-link">Courses</a>
+        <a href="#How-It-Works" class="nav-link">How It Works</a>
+      </nav>
+    </header>
+
+    <section class="contact">
+      <h1>Learn to create your portfolio for free</h1>
+
+      <form action=" https://www.freecodecamp.com/email-submit" id="form">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your Email"
+        />
+        <input id="submit" type="submit" value="Send data" />
+      </form>
+
+      <figure class="image">
+        <img
+          class="imgdev"
+          src="./img/undraw_personal_website_weap.svg"
+          alt=""
+        />
+      </figure>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <h2 class="titles">Features</h2>
+        <div class="features">
+          <div class="feature__list">
+            <ul>
+              <li>
+                <i class="far fa-check-circle"></i> Create fast and responsive
+                websites
+              </li>
+              <li>
+                <i class="far fa-check-circle"></i> Position your website in the
+                first places
+              </li>
+              <li>
+                <i class="far fa-check-circle"></i> Improve your personal brand
+              </li>
+              <li>
+                <i class="far fa-check-circle"></i> Easily communicate with your
+                customers
+              </li>
+            </ul>
+          </div>
+          <figure class="feature__container--img">
+            <img src="./img/undraw_personal_website_weap.svg" alt="" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div id="courses" class="container">
+      <h2 class="titles">Courses</h2>
+      <section class="education">
+        <div>
+          <i class="fab fa-html5 icon"></i>
+          <p>HTML5</p>
+          <a href="#" class="edu__btn">select</a>
+        </div>
+        <div>
+          <i class="fab fa-css3-alt icon"></i>
+          <p>CSS3</p>
+          <a href="#" class="edu__btn">select</a>
+        </div>
+        <div>
+          <i class="fab fa-js icon"></i>
+          <p>JavaScript</p>
+          <a href="#" class="edu__btn">select</a>
+        </div>
+        <div>
+          <i class="fab fa-node-js icon"></i>
+          <p>Node Js</p>
+          <a href="#" class="edu__btn">select</a>
+        </div>
+        <div>
+          <i class="fab fa-react icon"></i>
+          <p>React Js</p>
+          <a href="#" class="edu__btn">select</a>
+        </div>
+        <div>
+          <i class="fab fa-github icon"></i>
+          <p>Git & GitHub</p>
+          <a href="#" class="edu__btn">select</a>
+        </div>
+      </section>
+    </div>
+
+    <section id="How-It-Works" class="video">
+      <iframe
+        id="video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/1hPgQWbWmEk"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <footer>
+      <div>
+        <p>
+          © Created for freeCodeCamp
+          <a href="https://www.freecodecamp.org/" target="_blank"
+            ><i class="fab fa-free-code-camp"></i
+          ></a>
+        </p>
+      </div>
+      <div>
+        <p>@educodes</p>
+      </div>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

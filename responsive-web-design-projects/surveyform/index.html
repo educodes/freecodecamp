@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Development group</title>
+  </head>
+
+  <body>
+    <header>
+      <p>@eduCodes</p>
+      <a class="social" href="https://github.com/educodes" target="_blank"
+        ><i class="fab fa-github"></i
+      ></a>
+    </header>
+    <h1 id="title">Development group</h1>
+    <p id="description">Welcome to the Development group job application</p>
+
+    <form action="" id="survey-form">
+      <div>
+        <label class="label-title" id="name-label" for="name">Name</label>
+        <input
+          class="input-form"
+          id="name"
+          type="text"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+
+      <div>
+        <label class="label-title" id="email-label" for="email">Email</label>
+        <input
+          class="input-form"
+          id="email"
+          type="email"
+          style="width: 100%"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <div>
+        <label class="label-title" id="number-label" for="number"
+          >Age (Optional)</label
+        >
+        <input
+          class="input-form"
+          id="number"
+          type="number"
+          style="width: 100%"
+          placeholder="Enter your Age"
+          min="15"
+          max="100"
+          required
+        />
+      </div>
+
+      <div>
+        <p>Which option best describes your current role?</p>
+        <select name="dropdown" id="dropdown">
+          <optgroup>
+            <option value="">Select current role</option>
+            <option value="Front-end">Front-end</option>
+            <option value="Back-end">Back-end</option>
+            <option value="Full-Stack">Full Stack</option>
+            <option value="Data-analyst">Data analyst</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="input-form2">
+        <p class="label-title">How many years of experience do you have?</p>
+
+        <label for="one">
+          <input type="radio" value="1" name="option" id="one" checked /> 1
+        </label>
+
+        <label for="two">
+          <input type="radio" value="2" name="option" id="two" /> 2
+        </label>
+
+        <label for="three">
+          <input type="radio" value="3" name="option" id="three" /> 3
+        </label>
+      </div>
+
+      <div class="input-form2">
+        <p class="label-title">Select the technologies you work with</p>
+        <label for="HTML5">
+          <input type="checkbox" name="HTML5" id="HTML5" value="HTML5" />HTML5
+        </label>
+
+        <label for="CSS3">
+          <input type="checkbox" name="CSS3" id="CSS3" value="CSS3" />CSS3
+        </label>
+
+        <label for="JavaScript">
+          <input
+            type="checkbox"
+            name="JavaScript"
+            id="JavaScript"
+            value="JavaScript"
+          />JavaScript
+        </label>
+
+        <label for="Node-Js">
+          <input
+            type="checkbox"
+            name="Node-Js"
+            id="Node-Js"
+            value="Node-Js"
+          />Node Js
+        </label>
+
+        <label for="React-Js">
+          <input
+            type="checkbox"
+            name="React-Js"
+            id="React-Js"
+            value="React-Js"
+          />React Js
+        </label>
+
+        <label for="Angular">
+          <input
+            type="checkbox"
+            name="Angular"
+            id="Angular"
+            value="Angular"
+          />Angular
+        </label>
+
+        <label for="Vue-Js">
+          <input type="checkbox" name="Vue-Js" id="Vue-Js" value="Vue-Js" />Vue
+          Js
+        </label>
+      </div>
+
+      <div>
+        <p class="label-title">Describe your professional profile</p>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+      <button id="submit" type="submit" class="btn">Send data</button>
+    </form>
+    <footer>
+      <div>
+        <p>Project for freecodecamp</p>
+      </div>
+      <div>
+        <p>Development group</p>
+      </div>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+  font-family: "Jost", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.titles {
+  font-size: 2.8rem;
+}
+
+
+#header {
+  background: rgb(48, 19, 213);
+  background: linear-gradient(
+    3deg,
+    rgba(48, 19, 213, 1) 0%,
+    rgba(0, 177, 255, 1) 100%
+  );
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+  height: 60px;
+  /* margin-bottom: 0px; */
+}
+
+.header-img {
+  width: 100px;
+  height: auto;
+}
+
+.nav-link {
+  color: #ffffff;
+  padding: 10px;
+  text-decoration: none;
+}
+
+h1 {
+  color: rgb(48, 19, 213);
+  font-size: 2em;
+  grid-area: title;
+  text-align: center;
+}
+
+
+.contact {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "image"
+    "title"
+    "form";
+  gap: 10px;
+  padding: 40px 0 100px 0;
+  margin-bottom: 100px;
+}
+
+.image {
+  grid-area: image;
+  text-align: center;
+  min-width: 320px;
+}
+
+.imgdev {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+#form {
+  grid-area: form;
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 1fr 50px;
+  gap: 10px;
+  justify-content: center;
+}
+
+#form #email {
+  padding: 15px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid rgb(48, 19, 213);
+}
+
+#form #submit {
+  background: #3013d5;
+  background: linear-gradient(
+    3deg,
+    rgba(48, 19, 213, 1) 0%,
+    rgba(0, 177, 255, 1) 100%
+  );
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#form #submit:hover {
+  background-color: tomato;
+  background: linear-gradient(3deg, rgb(213, 25, 19) 0%, rgb(255, 123, 0) 100%);
+}
+
+.education {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 280px);
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  gap: 50px;
+}
+
+.education div {
+  text-align: center;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.icon {
+  font-size: 7em;
+  color: #5f5f5f;
+}
+
+.fa-html5:hover {
+  color: rgb(255, 148, 9);
+}
+
+.fa-css3-alt:hover {
+  color: rgb(3, 73, 223);
+}
+
+.fa-js:hover {
+  color: rgb(235, 231, 20);
+}
+
+.fa-node-js:hover {
+  color: yellowgreen;
+}
+
+.fa-react:hover {
+  color: aqua;
+}
+
+.fa-github:hover {
+  color: black;
+}
+
+.education p {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.edu__btn {
+  background: rgb(48, 19, 213);
+  text-decoration: none;
+  padding: 5px 20px;
+  display: inline-block;
+  color: white;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.edu__btn:hover {
+  background: tomato;
+}
+
+.video {
+  padding: 40px 0;
+}
+
+iframe {
+  width: 100%;
+  max-width: 560px;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: rgb(15, 15, 15);
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 0.9rem;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  gap: 50px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.feature__list ul {
+  list-style: none;
+  display: grid;
+  text-align: justify;
+  line-height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature__list ul li {
+  font-size: 1.3rem;
+}
+
+.feature__list ul li i {
+  color: rgb(37, 21, 255);
+}
+
+.feature__container--img img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+}
+
+
+@media (max-width: 498px) {
+  .header-img {
+    width: 60px;
+  }
+
+  .nav-link {
+    color: #ffffff;
+    font-size: 0.7rem;
+    padding: 5px;
+    text-decoration: none;
+  }
+
+  .contact {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "title"
+      "form";
+    gap: 10px;
+    padding: 0px 0 100px 0;
+  }
+
+  .feature__list ul li {
+    font-size: 0.8rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 90px;
+  }
+
+  .education {
+    margin-top: 90px;
+  }
+}

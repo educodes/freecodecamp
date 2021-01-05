@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+  display: grid;
+  font-family: "Oxygen", sans-serif;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/586056/pexels-photo-586056.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  height: 100%;
+}
+
+.hero-container h1 {
+  font-size: 3.1rem;
+}
+
+.business {
+  display: grid;
+  grid-template-columns: repeat(1, 220px);
+  justify-content: center;
+  gap: 30px;
+  margin: 150px 0;
+}
+
+.business div {
+  display: grid;
+  align-items: center;
+}
+
+.business img {
+  width: 100%;
+  height: auto;
+}
+
+.btn-down {
+  font-size: 3.5rem;
+  color: white;
+  margin-top: 20px;
+}
+
+#img-div {
+  margin-bottom: 100px;
+  display: grid;
+  justify-content: center;
+}
+
+#image {
+  display: block;
+  width: 100%;
+  max-width: 270px;
+  height: auto;
+  border-radius: 50%;
+}
+
+#img-caption a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+  font-size: 1.2rem;
+  border-bottom: 1px solid slateblue;
+}
+
+#tribute-info {
+  display: grid;
+  justify-content: center;
+  text-align: start;
+  background-color: rgb(246, 246, 246);
+  padding: 100px 20px;
+}
+
+#tribute-info h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#tribute-info p {
+  font-size: 0.9rem;
+  padding: 20px 0;
+}
+
+#tribute-info span {
+  font-weight: bold;
+  color: rgb(0, 163, 238);
+}
+
+#tribute-info i {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+
+#tribute-info a {
+  color: rgb(0, 163, 238);
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .hero-container h1 {
+    font-size: 5.1rem;
+  }
+  .hero-container p {
+    font-size: 2.1rem;
+  }
+
+  .business {
+    grid-template-columns: repeat(3, 220px);
+  }
+
+  #image {
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  #tribute-info p {
+    font-size: 1.5rem;
+    padding: 20px 80px;
+  }
+}
