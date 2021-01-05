@@ -1,8 +1,8 @@
-# Freecodecamp projects :tw-1f6a9:
+# Freecodecamp projects
 
 This repository contains the projects developed to obtain the freecodecamp certifications.
 
-## Responsive Web Design Projects :tw-2b50:
+## Responsive Web Design Projects 
 
 - [Tribute Page](https://educodes.github.io/freecodecamp/responsive-web-design-projects/tributepage/index.html "Tribute Page")
 
